@@ -61,11 +61,13 @@
   </section>
   <!-- About section  -->
   <section class="about-section" id="about">
+    <h2 class="heading">About<span> Me </span></h2>
+    <div class="about-container">
     <div class="about-img">
       <img src="IMG-20250301-WA0045.jpg">
     </div>
     <div class="about-content">
-      <h2 class="heading">About<span> Me </span></h2>
+      
       <h3>Fronted Developer </h3>
       <P>Hello i am Biswajit , i have Skilled in HTML, CSS, JavaScript,MERN Stack and responsive design to ensure seamless
         experiences across devices.
@@ -73,12 +75,13 @@
         Committed to staying updated with design trends and technologies to deliver modern, impactful web solutions.</P>
       <button class="btn">Read more</button>
     </div>
+    </div>
   </section>
   <!-- service section  -->
-  <section class="services" id="services">
+  <section class="services-section" id="services">
     <h2 class="heading">My <span>Services</span></h2>
     <div class="services-content">
-      <div class="services-box">
+      <div class="services-box" id="service1">
         <i class="fa-solid fa-palette"></i>
         <h2 class="heading">Webpage designer and Developer</h2>
         Passionate and results-driven Frontend Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js). 
@@ -101,7 +104,7 @@
     </div>
   </section>
   <!-- project section  -->
-  <section id="project">
+  <section class="project-section" id="project">
     <div id="heading">
       <h2>Project</h2>
     </div>
@@ -113,14 +116,14 @@
         </div>
         <p>It is Ai img Gen project ,Building using html, css and javascript . Here you search anyting and it crate an Image.</p>
        
-
+        <button class="card-btn">More</button>
       </div>
       <div class="project-box">
         <div id="img-box">
           <img src="Screenshot 2025-06-29 091956.png" alt="picture">
         </div>
         <p>It is Signin & Singnup Page build using html css.</p>
-       
+        <button class="card-btn">More</button>
 
       </div>
 
@@ -132,15 +135,15 @@
         </div>
         <p>It is currency converter website build using html css and javascript . In this site you can convert currency from ano country to another country.</p>
        
-
+ <button class="card-btn">More</button>
       </div>
       <div class="project-box">
         <div id="img-box">
           <img src="Screenshot 2025-06-29 091859.png" alt="picture">
         </div>
-        <p>This is simple calculater build using html and css . Here you can calculate some Basic calculation like addition, subtraction,Multipilication and Dividion etc.</p>
+        <p>This is simple calculater build using html and css . Here you can calculate some Basic calculation </p>
        
-
+ <button class="card-btn">More</button>
       </div>
 
 
@@ -151,7 +154,7 @@
         </div>
         <p>It is my simple campus landing webpage .It is bulid using only html and css.</p>
        
-
+ <button class="card-btn">More</button>
       </div>
       <div class="project-box">
         <div id="img-box">
@@ -159,26 +162,27 @@
         </div>
         <p>This is Tic-Toe Games build using html ,css and javascript . Here you play tic toe game in online mode.</p>
         
-
+ <button class="card-btn">More</button>
       </div>
     </div>
   </section>
   <!-- contact section -->
-  <section class="contact" id="contact">
+  <section class="contact-section" id="contact">
     <h2 class="heading">Contact <span>Me </span></h2>
 
-    <form action="#">
+    <form action="https://api.web3forms.com/submit" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Enter your name.." required>
-        <input type="email" placeholder="Enter your email" required>
+         <input type="hidden" name="access_key" value="91347d40-4b41-4282-be20-e684bb26e084">
+        <input type="text" placeholder="Enter your name.." name="firstname" required>
+        <input type="email" placeholder="Enter your email" required name="email">
 
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Enter your number.." required>
-        <input type="text" placeholder="Enter your email subject " required>
+        <input type="tel" placeholder="Enter your MOB number.."  maxlength="10" minlength="10" pattern="[0-9]{10}" name="mob">
+        <input type="text" placeholder="Enter your email subject " required name="email-subject">
 
       </div>
-      <textarea name="" cols="30" rows="12" placeholder=" Type your messsage........... "></textarea>
+      <textarea name="" cols="30" rows="12" placeholder=" Type your messsage........... " name="description"></textarea>
       <button class="btn">Send Messsage</button>
     </form>
   </section>
