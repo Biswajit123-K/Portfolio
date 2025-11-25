@@ -488,7 +488,7 @@ span {
 }
 
 /* responsive */
-@media screen and (max-width:391px) {
+@media screen and (max-width:420px) {
     .about-content {
         margin-left: auto;
     }
