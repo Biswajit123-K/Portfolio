@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biswajit Portfolio</title>
+   <title>Biswajit | Portfolio</title>
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- css link -->
   <link rel="stylesheet" href="style.css">
 
@@ -16,185 +17,913 @@
 
 <body>
   <!-- Header section  -->
-  <header class="header">
-    <a href="#" id="logo"> Biswajit </a>
-    <nav class="navbar">
-      <a href="/">Home </a>
-      <a href="#about">About </a>
-      <a href="#services">Services </a>
-
-      <a href="#project">Project </a>
-      <a href="#contact">Contact Me </a>
+   
+  <header class="header" id="header">
+    <a href="#" id="logo">Biswa<span>jit</span></a>
+ 
+    <nav class="navbar" id="navbar">
+      <a href="/" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#project">Project</a>
+      <a href="#contact" class="cta">Contact Me</a>
     </nav>
+ 
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
+ 
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="/" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#project" onclick="closeMenu()">Project</a>
+    <a href="#contact" class="cta" onclick="closeMenu()">Contact Me</a>
+  </nav>
 
 
 
 
   <!-- Home section -->
-  <section class="Home-section" id="/">
+   <section class="Home-section" id="home">
+ 
+    <!-- LEFT: text -->
     <div class="Home-container">
-      <h3>Hello, Myself </h3>
-      <h1>Biswajit </h1>
-      <h3>I am a <span>Fronted Developer</span> </h3>
-      <p>Skilled in HTML, CSS, JavaScript and MERN stack to responsive design to ensure seamless experiences across
-        devices.
-        Experienced in translating UI/UX designs into functional code with a focus on performance and accessibility.
-        Committed to staying updated with design trends and technologies to deliver modern, impactful web solutions.</p>
+ 
+      <span class="home-greeting">Hello, Myself</span>
+ 
+      <h1>Biswajit<br><span class="neon">Kumbhakar</span></h1>
+ 
+      <p class="home-role">
+        I'm a <span class="typewriter" id="typewriter"></span>
+      </p>
+ 
+      <p>
+        Skilled in HTML, CSS, JavaScript and MERN stack to build responsive designs that ensure seamless experiences across devices. Experienced in translating UI/UX designs into functional code with a focus on performance and accessibility. Committed to staying updated with design trends to deliver modern, impactful web solutions.
+      </p>
+ 
+ 
+      <!-- social icons -->
       <div class="social-icon">
-        <a href="https://www.facebook.com/share/14JFX7aRwwS/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/itz_me_biswajit01?igsh=Mmh3MDJ0MW9jbWJi"><i
-            class="fa-brands fa-instagram"></i></a>
-        <a
-          href="https://www.linkedin.com/in/biswajit-kumbhakar-b993062a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Biswajit123-K"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/share/14JFX7aRwwS/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/itz_me_biswajit01?igsh=Mmh3MDJ0MW9jbWJi" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/biswajit-kumbhakar-b993062a3" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Biswajit123-K" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
       </div>
-      <button class="btn"><a href="biswajitkumbhakar.pdf" style="text-decoration: none;"> Download CV</a></button>
+ 
+      <!-- CTA buttons -->
+      <div class="home-cta">
+        <button class="btn">
+          <i class="fa-solid fa-download" style="font-size:.82rem;"></i>
+          <a href="Biswajit Resume (1).pdf" download>Download CV</a>
+        </button>
+        <a href="#project" class="btn-outline">
+          View Projects <i class="fa-solid fa-arrow-right" style="font-size:.78rem;"></i>
+        </a>
+      </div>
+ 
     </div>
+ 
+    <!-- RIGHT: image -->
     <div class="home-img">
-
-      <img src="myimg.jpg">
-
-
+ 
+    
+ 
+      <div class="img-ring">
+        <div class="img-glow"></div>
+        <img
+          src="myimg.jpg"
+          alt="Biswajit Kumbhakar"
+          onerror="this.src='https://ui-avatars.com/api/?name=Biswajit+K&size=400&background=0f0f18&color=00f5a0&bold=true&font-size=0.35'"
+        />
+      </div>
+ 
+      <!-- available badge -->
+      <div class="float-badge">
+        <div class="dot"></div>
+        <span>Available for work</span>
+      </div>
+ 
     </div>
   </section>
   <!-- About section  -->
-  <section class="about-section" id="about">
-    <h2 class="heading">About<span> Me </span></h2>
-    <div class="about-container">
-    <div class="about-img">
-      <img src="IMG-20250301-WA0045.jpg">
-    </div>
-    <div class="about-content">
-      
-      <h3>Fronted Developer </h3>
-      <P>Hello i am Biswajit , i have Skilled in HTML, CSS, JavaScript,MERN Stack and responsive design to ensure seamless
-        experiences across devices.
-        Experienced in translating UI/UX designs into functional code with a focus on performance and accessibility.
-        Committed to staying updated with design trends and technologies to deliver modern, impactful web solutions.</P>
-      <button class="btn">Read more</button>
-    </div>
-    </div>
-  </section>
-  <!-- service section  -->
-  <section class="services-section" id="services">
-    <h2 class="heading">My <span>Services</span></h2>
-    <div class="services-content">
-      <div class="services-box" id="service1">
-        <i class="fa-solid fa-palette"></i>
-        <h2 class="heading">Webpage designer and Developer</h2>
-        Passionate and results-driven Frontend Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js). 
-        Dedicated to crafting intuitive and responsive user interfaces that enhance the
-         overall user experience. Proficient in building dynamic web applications, from conceptualization to deployment, with a keen eye for detail and a commitment to clean,
-          efficient code. Eager to leverage MERN stack expertise to develop innovative and scalable solutions
-
-      </div>
-      <div class="services-box">
-        <img src="tution teacher.png" alt="img">
-        <h2 class="heading"> Tution Teaccher</h2>
-        Highly motivated and results-driven Subject Tutor specializing in Computer Application  for students from Class LKG to Class 7. With 3 years of experience,
-         my focus is on clarifying complex concepts through personalized instruction, targeted practice,
-          and effective exam strategies. I am committed to boosting student confidence and achieving measurable 
-          academic improvement, preparing students not just for tests, but for lifelong learning.
-        <br>
-        <br>
-
-      </div>
-    </div>
-  </section>
-  <!-- project section  -->
-  <section class="project-section" id="project">
-    <div id="heading">
-      <h2>Project</h2>
-    </div>
-
-    <div class="project-card">
-      <div class="project-box">
-        <div id="img-box">
-          <img src="Screenshot 2025-06-29 091809.png" alt="picture">
+<section class="about-section" id="about">
+ 
+  <!-- heading -->
+  <div class="section-heading">
+    <h2>About <span>Me</span></h2>
+    <span class="underline"></span>
+  </div>
+ 
+  <!-- tab nav -->
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('bio', this)">
+      <i class="fa-solid fa-user" style="margin-right:.4rem;font-size:.8rem;"></i> About
+    </button>
+    <button class="tab-btn" onclick="switchTab('skills', this)">
+      <i class="fa-solid fa-code" style="margin-right:.4rem;font-size:.8rem;"></i> Skills
+    </button>
+    <button class="tab-btn" onclick="switchTab('certs', this)">
+      <i class="fa-solid fa-certificate" style="margin-right:.4rem;font-size:.8rem;"></i> Certificates
+    </button>
+  </div>
+ 
+  <!-- ── PANEL 1: BIO ── -->
+  <div class="tab-panel active" id="panel-bio">
+    <div class="bio-grid">
+ 
+      <!-- image -->
+      <div class="about-img-wrap">
+        <div class="about-img-frame">
+          <img
+            src="IMG-20250301-WA0045.jpg"
+            alt="Biswajit Kumbhakar"
+            onerror="this.src='https://ui-avatars.com/api/?name=Biswajit+K&size=280&background=0f0f18&color=00f5a0&bold=true&font-size=0.35'"
+          />
         </div>
-        <p>It is Ai img Gen project ,Building using html, css and javascript . Here you search anyting and it crate an Image.</p>
-       
-        <button class="card-btn">More</button>
-      </div>
-      <div class="project-box">
-        <div id="img-box">
-          <img src="Screenshot 2025-06-29 091956.png" alt="picture">
-        </div>
-        <p>It is Signin & Singnup Page build using html css.</p>
-        <button class="card-btn">More</button>
-
-      </div>
-
-
-
-      <div class="project-box">
-        <div id="img-box">
-          <img src="Screenshot 2025-06-29 091624.png" alt="picture">
-        </div>
-        <p>It is currency converter website build using html css and javascript . In this site you can convert currency from ano country to another country.</p>
-       
- <button class="card-btn">More</button>
-      </div>
-      <div class="project-box">
-        <div id="img-box">
-          <img src="Screenshot 2025-06-29 091859.png" alt="picture">
-        </div>
-        <p>This is simple calculater build using html and css . Here you can calculate some Basic calculation </p>
-       
- <button class="card-btn">More</button>
-      </div>
-
-
-
-      <div class="project-box">
-        <div id="img-box">
-          <img src="Screenshot 2025-06-29 092214.png" alt="picture">
-        </div>
-        <p>It is my simple campus landing webpage .It is bulid using only html and css.</p>
-       
- <button class="card-btn">More</button>
-      </div>
-      <div class="project-box">
-        <div id="img-box">
-          <img src="Screenshot 2025-06-29 092118.png" alt="picture">
-        </div>
-        <p>This is Tic-Toe Games build using html ,css and javascript . Here you play tic toe game in online mode.</p>
         
- <button class="card-btn">More</button>
+      </div>
+ 
+      <!-- content -->
+      <div class="bio-content">
+        <h3>Frontend Developer & MERN Stack</h3>
+        <p>Hello, I'm Biswajit! Skilled in HTML, CSS, JavaScript and the MERN stack — crafting responsive designs that ensure seamless experiences across all devices. Experienced in translating UI/UX designs into functional code with a focus on performance and accessibility. Committed to staying updated with design trends to deliver modern, impactful web solutions.</p>
+ 
+        <div class="bio-info">
+          <div class="info-item"><i class="fa-solid fa-location-dot"></i> Bankura, West Bengal</div>
+          <div class="info-item"><i class="fa-solid fa-briefcase"></i> Available for work</div>
+          <div class="info-item"><i class="fa-solid fa-graduation-cap"></i> MERN Stack Dev</div>
+          <div class="info-item"><i class="fa-brands fa-github"></i><a href="https://github.com/Biswajit123-K" style="text-decoration: none; cursor: pointer; color:var(--mute);">Biswajit123-K</a> </div>
+        </div>
+ 
+        <button class="btn-read" onclick="switchTab('skills', document.querySelectorAll('.tab-btn')[1])">
+          View My Skills <i class="fa-solid fa-arrow-right" style="font-size:.78rem;"></i>
+        </button>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- ── PANEL 2: SKILLS ── -->
+  <div class="tab-panel" id="panel-skills">
+    <div class="skills-wrapper">
+ 
+      <!-- Frontend -->
+      <div class="skills-category">
+        <div class="skills-category-title">Frontend</div>
+        <div class="skills-grid">
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(228,77,38,.12);">
+              <!-- HTML5 SVG logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 3l1.8 20.3L16 26l9.2-2.7L27 3H5z" fill="#E44D26"/>
+                <path d="M16 24.4V5H25.7L24.2 22z" fill="#F16529"/>
+                <path d="M16 13.5H11.8l-.3-3.2H16V7.1H8.2l.1 1.1.9 10.6H16zm0 5.9l-.1.1-3.4-1-.2-2.4H9.1l.4 5 6.4 1.8.1-.1z" fill="#EBEBEB"/>
+                <path d="M16 13.5v3.2h3.9l-.4 4.3-3.5 1v3.3l6.5-1.8.1-.9 1-11.1.1-1.1H16zm0-6.4v3.2h7.4l.1-1.1.3-2.1z" fill="#fff"/>
+              </svg>
+            </div>
+            <span class="skill-name">HTML5</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="95"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(21,114,182,.12);">
+              <!-- CSS3 SVG logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 3l1.8 20.3L16 26l9.2-2.7L27 3H5z" fill="#1572B6"/>
+                <path d="M16 24.4V5H25.7L24.2 22z" fill="#33A9DC"/>
+                <path d="M16 13.5H11.5l-.1-1.7H16V8.6H9l.8 9.1H16zm0 6.1l-3.1-.8-.2-2.3H9.4l.4 4.7 6.2 1.7z" fill="#EBEBEB"/>
+                <path d="M15.9 13.5v2.2h3.5l-.3 3.9-3.2.8v2.7l6.2-1.7 1-11.8H15.9v2.2h4.2l-.1 1.7z" fill="#fff"/>
+              </svg>
+            </div>
+            <span class="skill-name">CSS3</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="90"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(247,223,30,.10);">
+              <!-- JS logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="4" fill="#F7DF1E"/>
+                <path d="M9.5 25.3l2.2-1.3c.4.8.8 1.4 1.7 1.4.9 0 1.4-.3 1.4-1.7v-9h2.7v9c0 2.8-1.6 4-4 4-2.1 0-3.3-1.1-3.9-2.4zM19 25l2.2-1.3c.6 1 1.3 1.7 2.7 1.7 1.1 0 1.8-.6 1.8-1.3 0-.9-.7-1.3-2-1.8l-.7-.3c-2-.8-3.3-1.9-3.3-4.1 0-2 1.6-3.6 4-3.6 1.7 0 3 .6 3.9 2.2l-2.1 1.4c-.5-.9-1-1.2-1.8-1.2s-1.3.5-1.3 1.2c0 .8.5 1.2 1.7 1.7l.7.3c2.3 1 3.6 2 3.6 4.3 0 2.5-1.9 3.8-4.5 3.8-2.5 0-4.1-1.2-4.9-2.9z" fill="#000"/>
+              </svg>
+            </div>
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="85"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(97,218,251,.10);">
+              <!-- React logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="2.5" fill="#61DAFB"/>
+                <ellipse cx="16" cy="16" rx="12" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.2"/>
+                <ellipse cx="16" cy="16" rx="12" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(60 16 16)"/>
+                <ellipse cx="16" cy="16" rx="12" ry="4.5" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(120 16 16)"/>
+              </svg>
+            </div>
+            <span class="skill-name">React.js</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="80"></div></div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+      <!-- Backend -->
+      <div class="skills-category">
+        <div class="skills-category-title">Backend & Database</div>
+        <div class="skills-grid">
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(104,160,99,.12);">
+              <!-- Node.js -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L3 9.5v13L16 30l13-7.5v-13L16 2z" fill="#339933"/>
+                <path d="M16 6.5l-8.5 4.9v9.8L16 26l8.5-4.9v-9.8L16 6.5z" fill="#fff" opacity=".1"/>
+                <text x="16" y="21" text-anchor="middle" font-size="9" font-weight="700" fill="#fff" font-family="Arial">Node</text>
+              </svg>
+            </div>
+            <span class="skill-name">Node.js</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="75"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(0,122,204,.10);">
+              <!-- Express -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="6" fill="#000"/>
+                <text x="16" y="21" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Arial">Express</text>
+              </svg>
+            </div>
+            <span class="skill-name">Express.js</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="72"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(71,162,72,.12);">
+              <!-- MongoDB leaf -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3C16 3 9 11 9 18c0 3.9 3.1 7 7 7s7-3.1 7-7C23 11 16 3 16 3z" fill="#47A248"/>
+                <path d="M16 8v17" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="skill-name">MongoDB</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="70"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(51,103,214,.10);">
+              <!-- Python -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3c-4 0-7.5.7-7.5 4v3h7.5v1H8.5S4 11.3 4 16s4 8.5 4.5 8.5H11v-4.5c0-1.5 1.3-2.5 2.5-2.5h5c1.1 0 2-1 2-2.5V7c0-1.8-1.7-4-4.5-4zm-2 2.5c.8 0 1.5.7 1.5 1.5S14.8 8.5 14 8.5 12.5 7.8 12.5 7 13.2 5.5 14 5.5z" fill="#3776AB"/>
+                <path d="M16 29c4 0 7.5-.7 7.5-4v-3H16v-1h7.5S28 20.7 28 16s-4-8.5-4.5-8.5H21v4.5c0 1.5-1.3 2.5-2.5 2.5h-5c-1.1 0-2 1-2 2.5v8.5c0 1.8 1.7 4 4.5 4zm2-2.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="#FFD43B"/>
+              </svg>
+            </div>
+            <span class="skill-name">Python</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="65"></div></div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+      <!-- Tools -->
+      <div class="skills-category">
+        <div class="skills-category-title">Tools & Others</div>
+        <div class="skills-grid">
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(240,80,51,.12);">
+              <!-- Git -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.5 14.8L17.2 2.5c-.9-.9-2.4-.9-3.3 0l-2.3 2.3 2.9 2.9c.7-.3 1.5-.1 2.1.5.6.6.7 1.4.5 2.1l2.8 2.8c.7-.2 1.5-.1 2.1.5.8.8.8 2.2 0 3s-2.2.8-3 0c-.6-.6-.8-1.5-.5-2.2l-2.7-2.7v7.1c.2.1.4.2.6.4.8.8.8 2.2 0 3s-2.2.8-3 0-.8-2.2 0-3c.2-.2.5-.4.7-.5V11c-.2-.1-.5-.3-.7-.5-.6-.6-.8-1.5-.5-2.2L10 5.3 2.5 12.8c-.9.9-.9 2.4 0 3.3l12.3 12.4c.9.9 2.4.9 3.3 0l11.4-11.4c.9-1 .9-2.4 0-3.3z" fill="#F05033"/>
+              </svg>
+            </div>
+            <span class="skill-name">Git</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="80"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(36,41,46,.4);">
+              <!-- GitHub -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#fff" d="M16 3C8.8 3 3 8.8 3 16c0 5.8 3.8 10.7 9 12.4.7.1.9-.3.9-.6v-2.2c-3.7.8-4.5-1.8-4.5-1.8-.6-1.5-1.5-2-1.5-2-1.2-.8.1-.8.1-.8 1.3.1 2 1.4 2 1.4 1.2 2 3.1 1.4 3.8 1.1.1-.8.5-1.4.8-1.7-2.9-.3-6-1.5-6-6.5 0-1.4.5-2.6 1.3-3.6-.1-.3-.6-1.7.1-3.5 0 0 1.1-.3 3.5 1.3a12 12 0 016.4 0c2.5-1.7 3.5-1.3 3.5-1.3.7 1.8.3 3.2.1 3.5.8.9 1.3 2.1 1.3 3.6 0 5.1-3.1 6.2-6.1 6.5.5.4.9 1.2.9 2.5v3.7c0 .3.2.7.9.6C25.2 26.7 29 21.8 29 16c0-7.2-5.8-13-13-13z"/>
+              </svg>
+            </div>
+            <span class="skill-name">GitHub</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(0,122,204,.12);">
+              <!-- VS Code -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 3l-8 8L8 6 3 9l9 7-9 7 5 3 8-5 8 8 5-3V6z" fill="#007ACC"/>
+                <path d="M24 3L16 11V21l8 8 5-3V6z" fill="#1BA1E2" opacity=".5"/>
+              </svg>
+            </div>
+            <span class="skill-name">VS Code</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="90"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(255,110,60,.12);">
+              <!-- Postman -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13" fill="#FF6C37"/>
+                <text x="16" y="21" text-anchor="middle" font-size="9" font-weight="700" fill="#fff" font-family="Arial">POST</text>
+              </svg>
+            </div>
+            <span class="skill-name">Postman</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="68"></div></div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+      <!-- Programming Languages -->
+      <div class="skills-category">
+        <div class="skills-category-title">Programming Languages</div>
+        <div class="skills-grid">
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(0,89,156,.12);">
+              <!-- C logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13" fill="#00599C"/>
+                <text x="16" y="21" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">C</text>
+              </svg>
+            </div>
+            <span class="skill-name">C</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="70"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(0,89,156,.14);">
+              <!-- C++ logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13" fill="#004482"/>
+                <text x="13" y="21" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" font-family="Arial">C++</text>
+              </svg>
+            </div>
+            <span class="skill-name">C++</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="68"></div></div>
+          </div>
+ 
+          <div class="skill-card">
+            <div class="skill-icon" style="background:rgba(237,117,39,.12);">
+              <!-- Java logo -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 22.4s-1.2.7.9 1c2.5.3 3.8.2 6.5-.2 0 0 .7.5 1.7.9-6.1 2.6-13.8-.1-9.1-1.7z" fill="#EA2D2E"/>
+                <path d="M11.7 19.5s-1.4 1 1.5 1.3c2.7.3 4.9.3 8.6-.4 0 0 .5.5 1.3.8-7.6 2.2-16.1.2-11.4-1.7z" fill="#EA2D2E"/>
+                <path d="M17.5 13.8c1.6 1.8-.4 3.4-.4 3.4s3.9-2 2.1-4.5c-1.7-2.3-3-3.5 4-7.5 0 0-10.9 2.7-5.7 8.6z" fill="#EA2D2E"/>
+                <path d="M24.6 24.9s.9.7-1 1.3c-3.5 1.1-14.6 1.4-17.7 0-1.1-.5 1-.1 1-.1 1.1.7 9 .5 14 0 2-.2 3.7-.8 3.7-1.2z" fill="#EA2D2E"/>
+                <path d="M13.2 16.9s-4.3 1-1.5 1.4c1.2.2 3.5.1 5.7-.1 1.8-.1 3.6-.5 3.6-.5s-.6.3-1 .5c-4.1 1.1-12 .6-9.7-.5 1.9-.9 2.9-.8 2.9-.8z" fill="#5382A1"/>
+                <path d="M22.2 21.8c4.2-2.2 2.2-4.3 1-4 0 0 .3-.4 1-.6 3.6 1.3 1.8 5.4-2 4.6z" fill="#5382A1"/>
+                <path d="M19.4 4s2.5 2.5-2.3 6.3c-3.8 3-1 4.7 0 6.6-2.2-2-3.8-3.7-2.7-5.3 1.5-2.3 5.9-3.4 5-7.6z" fill="#5382A1"/>
+                <path d="M14 28.4c4 .3 10.1-.2 10.2-1.6 0 0-.3.7-3.3 1.3-3.4.6-7.5.5-10-.1 0 0 .5.4 3.1.4z" fill="#5382A1"/>
+              </svg>
+            </div>
+            <span class="skill-name">Java</span>
+            <div class="skill-level"><div class="skill-level-bar" data-level="65"></div></div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- ── PANEL 3: CERTIFICATES ── -->
+  <div class="tab-panel" id="panel-certs">
+    <div class="certs-wrapper">
+      <div class="certs-grid">
+ 
+        <!-- CERT 1: MERN Stack -->
+        <div class="cert-card">
+          <div class="cert-card-accent" style="background: linear-gradient(90deg,#00f5a0,#00c9ff);"></div>
+          <div class="cert-card-body">
+            <div class="cert-icon-row">
+              <div class="cert-issuer-logo" style="background: linear-gradient(135deg,#00c9ff,#00f5a0); color:#08080e;">AC</div>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-title">MERN Stack Development</div>
+            <div class="cert-issuer">Ardent Computech Pvt. Ltd.</div>
+            <div class="cert-tags">
+              <span class="cert-tag">MongoDB</span>
+              <span class="cert-tag">Express.js</span>
+              <span class="cert-tag">React.js</span>
+              <span class="cert-tag">Node.js</span>
+            </div>
+            <div class="cert-footer">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Professional Certificate</span>
+              <span class="cert-verified"><i class="fa-solid fa-shield-halved" style="font-size:.65rem;"></i> Verified</span>
+            </div>
+            <button class="cert-view-btn" onclick="openCertModal('mern')">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </button>
+          </div>
+        </div>
+ 
+        <!-- CERT 2: Python -->
+        <div class="cert-card">
+          <div class="cert-card-accent" style="background: linear-gradient(90deg,#3776AB,#FFD43B);"></div>
+          <div class="cert-card-body">
+            <div class="cert-icon-row">
+              <div class="cert-issuer-logo" style="background: linear-gradient(135deg,#3776AB,#1a4d7a);">CT</div>
+              <span class="cert-year">2026</span>
+            </div>
+            <div class="cert-title">Python Programming</div>
+            <div class="cert-issuer">Codec Technology</div>
+            <div class="cert-tags">
+              <span class="cert-tag">Python</span>
+              <span class="cert-tag">Data Structures</span>
+              <span class="cert-tag">OOP</span>
+              <span class="cert-tag">Scripting</span>
+            </div>
+            <div class="cert-footer">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Professional Certificate</span>
+              <span class="cert-verified"><i class="fa-solid fa-shield-halved" style="font-size:.65rem;"></i> Verified</span>
+            </div>
+            <button class="cert-view-btn" onclick="openCertModal('python')">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </button>
+          </div>
+        </div>
+ 
+        <!-- CERT 3: DCA -->
+        <div class="cert-card">
+          <div class="cert-card-accent" style="background: linear-gradient(90deg,#a855f7,#ec4899);"></div>
+          <div class="cert-card-body">
+            <div class="cert-icon-row">
+              <div class="cert-issuer-logo" style="background: linear-gradient(135deg,#a855f7,#7c3aed);">JN</div>
+              <span class="cert-year">2023</span>
+            </div>
+            <div class="cert-title">DCA — Diploma in Computer Applications</div>
+            <div class="cert-issuer">JNCLD</div>
+            <div class="cert-tags">
+              <span class="cert-tag">MS Office</span>
+              <span class="cert-tag">Computer Basics</span>
+              <span class="cert-tag">Internet</span>
+              <span class="cert-tag">Typing</span>
+            </div>
+            <div class="cert-footer">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Diploma Certificate</span>
+              <span class="cert-verified"><i class="fa-solid fa-shield-halved" style="font-size:.65rem;"></i> Verified</span>
+            </div>
+            <button class="cert-view-btn" onclick="openCertModal('dca')">
+              <i class="fa-solid fa-eye"></i> View Certificate
+            </button>
+          </div>
+        </div>
+ 
       </div>
     </div>
-  </section>
+  </div>
+ 
+</section>
+  <!-- service section  -->
+<section class="services-section" id="services">
+ 
+  <div class="section-heading">
+    <h2>My <span>Services</span></h2>
+    <span class="underline"></span>
+    <p>What I bring to the table — built through real projects and passion</p>
+  </div>
+ 
+  <div class="services-content">
+ 
+    <!-- ── Card 1: Web Development ── -->
+    <div class="service-card">
+      <span class="service-num">01</span>
+ 
+      <div class="service-icon" style="background:rgba(0,245,160,.10);">
+        <i class="fa-solid fa-palette" style="color:var(--neon);"></i>
+      </div>
+ 
+      <div class="service-title">Web Design & Development</div>
+ 
+      <p class="service-desc">
+        Passionate and results-driven Frontend Developer with a strong foundation in the MERN stack
+        (MongoDB, Express.js, React, Node.js). Dedicated to crafting intuitive and responsive user
+        interfaces that enhance the overall user experience — from conceptualization to deployment,
+        with a keen eye for detail and a commitment to clean, efficient code.
+      </p>
+ 
+      <ul class="service-offers">
+        <li>Responsive websites & web apps for all screen sizes</li>
+        <li>Full-stack MERN development from database to UI</li>
+        <li>Performance optimization and accessibility compliance</li>
+        <li>API integration and RESTful backend development</li>
+      </ul>
+ 
+      <div class="service-tags">
+        <span class="service-tag">React.js</span>
+        <span class="service-tag">Node.js</span>
+        <span class="service-tag">MongoDB</span>
+        <span class="service-tag">Express.js</span>
+        <span class="service-tag">REST API</span>
+      </div>
+ 
+      <div class="service-divider"></div>
+ 
+      <div class="service-stats">
+        <div><span class="stat-num">15+</span><span class="stat-lbl">Projects</span></div>
+        <div><span class="stat-num">2+</span><span class="stat-lbl">Yrs Exp</span></div>
+        <div><span class="stat-num">100%</span><span class="stat-lbl">Responsive</span></div>
+      </div>
+ 
+      <a href="#contact" class="service-hire">
+        <i class="fa-solid fa-paper-plane" style="font-size:.8rem;"></i> Hire Me
+      </a>
+    </div>
+ 
+    <!-- ── Card 2: Tuition Teacher ── -->
+    <div class="service-card purple">
+      <span class="service-num">02</span>
+ 
+      <div class="service-icon" style="background:rgba(168,85,247,.12);">
+        <i class="fa-solid fa-chalkboard-user" style="color:var(--purple);"></i>
+      </div>
+ 
+      <div class="service-title">Private Tuition & Teaching</div>
+ 
+      <p class="service-desc">
+        Highly motivated Subject Tutor specializing in Computer Application for students from
+        Class LKG to Class 7. With 3 years of experience, my focus is on clarifying complex
+        concepts through personalized instruction, targeted practice, and effective exam strategies
+        — committed to boosting student confidence and achieving measurable academic improvement.
+      </p>
+ 
+      <ul class="service-offers p">
+        <li>Personalized one-on-one or group sessions for each student</li>
+        <li>Computer Applications theory and practicals for school curriculum</li>
+        <li>Exam preparation with focused practice papers and strategies</li>
+        <li>Fun, engaging methods that make technology approachable for kids</li>
+      </ul>
+ 
+      <div class="service-tags">
+        <span class="service-tag p">Computer App</span>
+        <span class="service-tag p">LKG – Class 7</span>
+        <span class="service-tag p">MS Office</span>
+        <span class="service-tag p">Digital Literacy</span>
+        <span class="service-tag p">Exam Prep</span>
+      </div>
+ 
+      <div class="service-divider"></div>
+ 
+      <div class="service-stats">
+        <div><span class="stat-num p">3+</span><span class="stat-lbl">Yrs Teaching</span></div>
+        <div><span class="stat-num p">50+</span><span class="stat-lbl">Students</span></div>
+        <div><span class="stat-num p">LKG–7</span><span class="stat-lbl">Classes</span></div>
+      </div>
+ 
+      <a href="#contact" class="service-hire p">
+        <i class="fa-solid fa-paper-plane" style="font-size:.8rem;"></i> Hire Me
+      </a>
+    </div>
+ 
+  </div>
+</section>
+  <!-- project section  -->
+ <section class="project-section" id="project">
+ 
+  <div class="section-heading">
+    <div class="project-count">
+      <i class="fa-solid fa-folder-open"></i> 6 Projects
+    </div>
+    <h2>My <span>Projects</span></h2>
+    <span class="underline"></span>
+    <p>Things I've built — from experiments to real-world solutions</p>
+  </div>
+ 
+  <div class="project-card">
+ 
+    <!-- ── Project 1: AI Image Generator ── -->
+    <div class="project-box">
+      <div class="img-box">
+        <img src="Screenshot 2025-06-29 091809.png" alt="AI Image Generator"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none;">
+          <i class="fa-solid fa-robot"></i>
+          <span>AI Image Generator</span>
+        </div>
+        <div class="img-overlay">
+          <a href="https://github.com/Biswajit123-K" target="_blank" class="overlay-btn github">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="#" class="overlay-btn live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-title">AI Image Generator</div>
+        <p class="project-desc">Search anything and it generates an image using AI. Built with HTML, CSS and JavaScript.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">AI API</span>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-links">
+            <a href="https://github.com/Biswajit123-K" target="_blank" class="card-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="card-link live">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+          <span class="project-chip">01</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ── Project 2: Sign In / Sign Up ── -->
+    <div class="project-box">
+      <div class="img-box">
+        <img src="Screenshot 2025-06-29 091956.png" alt="Sign In Sign Up"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none;">
+          <i class="fa-solid fa-user-lock"></i>
+          <span>Sign In / Sign Up</span>
+        </div>
+        <div class="img-overlay">
+          <a href="https://github.com/Biswajit123-K" target="_blank" class="overlay-btn github">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="#" class="overlay-btn live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-title">Sign In & Sign Up Page</div>
+        <p class="project-desc">A clean and responsive authentication UI with sign in and sign up forms built with HTML & CSS.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">UI Design</span>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-links">
+            <a href="https://github.com/Biswajit123-K" target="_blank" class="card-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="card-link live">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+          <span class="project-chip">02</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ── Project 3: Currency Converter ── -->
+    <div class="project-box">
+      <div class="img-box">
+        <img src="Screenshot 2025-06-29 091624.png" alt="Currency Converter"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none;">
+          <i class="fa-solid fa-money-bill-transfer"></i>
+          <span>Currency Converter</span>
+        </div>
+        <div class="img-overlay">
+          <a href="https://github.com/Biswajit123-K" target="_blank" class="overlay-btn github">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="#" class="overlay-btn live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-title">Currency Converter</div>
+        <p class="project-desc">Convert currency between any two countries in real time. Built with HTML, CSS and JavaScript.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">API</span>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-links">
+            <a href="https://github.com/Biswajit123-K" target="_blank" class="card-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="card-link live">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+          <span class="project-chip">03</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ── Project 4: Calculator ── -->
+    <div class="project-box">
+      <div class="img-box">
+        <img src="Screenshot 2025-06-29 091859.png" alt="Calculator"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none;">
+          <i class="fa-solid fa-calculator"></i>
+          <span>Calculator</span>
+        </div>
+        <div class="img-overlay">
+          <a href="https://github.com/Biswajit123-K" target="_blank" class="overlay-btn github">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="#" class="overlay-btn live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-title">Simple Calculator</div>
+        <p class="project-desc">A basic calculator for everyday arithmetic operations. Built using only HTML and CSS.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-links">
+            <a href="https://github.com/Biswajit123-K" target="_blank" class="card-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="card-link live">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+          <span class="project-chip">04</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ── Project 5: Campus Landing Page ── -->
+    <div class="project-box">
+      <div class="img-box">
+        <img src="Screenshot 2025-06-29 092214.png" alt="Campus Landing Page"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none;">
+          <i class="fa-solid fa-school"></i>
+          <span>Campus Landing Page</span>
+        </div>
+        <div class="img-overlay">
+          <a href="https://github.com/Biswajit123-K" target="_blank" class="overlay-btn github">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="#" class="overlay-btn live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-title">Campus Landing Page</div>
+        <p class="project-desc">A clean and simple campus landing webpage built using only HTML and CSS.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">Landing Page</span>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-links">
+            <a href="https://github.com/Biswajit123-K" target="_blank" class="card-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="card-link live">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+          <span class="project-chip">05</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ── Project 6: Tic Tac Toe ── -->
+    <div class="project-box">
+      <div class="img-box">
+        <img src="Screenshot 2025-06-29 092118.png" alt="Tic Tac Toe"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder" style="display:none;">
+          <i class="fa-solid fa-gamepad"></i>
+          <span>Tic Tac Toe</span>
+        </div>
+        <div class="img-overlay">
+          <a href="https://github.com/Biswajit123-K" target="_blank" class="overlay-btn github">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="#" class="overlay-btn live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-title">Tic Tac Toe Game</div>
+        <p class="project-desc">Play Tic Tac Toe online in two-player mode. Built with HTML, CSS and JavaScript.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Game</span>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-links">
+            <a href="https://github.com/Biswajit123-K" target="_blank" class="card-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="card-link live">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+          <span class="project-chip">06</span>
+        </div>
+      </div>
+    </div>
+ 
+  </div><!-- end project-card -->
+</section>
   <!-- contact section -->
-  <section class="contact-section" id="contact">
-    <h2 class="heading">Contact <span>Me </span></h2>
+<section class="contact-section" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <div class="input-box">
-         <input type="hidden" name="access_key" value="91347d40-4b41-4282-be20-e684bb26e084">
-        <input type="text" placeholder="Enter your name.." name="firstname" required>
-        <input type="email" placeholder="Enter your email" required name="email">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    
+    <input type="hidden" name="access_key" value="91347d40-4b41-4282-be20-e684bb26e084">
 
-      </div>
-      <div class="input-box">
-        <input type="tel" placeholder="Enter your number.."  maxlength="10" minlength="10" pattern="[0-9]{10}" name="mob">
-        <input type="text" placeholder="subject (freelancing) " required name="email-subject">
+    <div class="input-box">
+      <input type="text" placeholder="Enter your name..." name="firstname" required>
+      <input type="email" placeholder="Enter your email..." name="email" required>
+    </div>
 
-      </div>
-      <textarea name="" cols="30" rows="12" placeholder=" Type your messsage........... " name="description"></textarea>
-      <button class="btn">Send Messsage</button>
-    </form>
-  </section>
+    <div class="input-box">
+      <input type="tel" placeholder="Enter your number..." maxlength="10" minlength="10" pattern="[0-9]{10}" name="mob">
+      <input type="text" placeholder="Subject (Freelancing)" name="subject" required>
+    </div>
+
+    <textarea name="message" rows="6" placeholder="Type your message..." required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
   <!-- footer design  -->
   <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy;2025 by @biswajit || All Right Reserves</p>
+  <div class="footer-container">
+    
+    <!-- Footer- About -->
+    <div class="footer-box">
+      <h2>Biswajit</h2>
+      <p>Passionate Web Developer creating modern and responsive web applications using MERN stack.</p>
     </div>
-    <div class="footer-icon">
-      <a href="/">Home</a>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <!-- Social Media -->
+    <div class="footer-box">
+      <h3>Follow Me</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/14JFX7aRwwS/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/biswajit-kumbhakar-b993062a3"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Biswajit123-K"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/itz_me_biswajit01?igsh=Mmh3MDJ0MW9jbWJi"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 Biswajit | All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN (for icons) -->
+
+  <script src="script.js"></script>
 </body>
 
 </html>
